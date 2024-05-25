@@ -64,10 +64,6 @@ def main():
                     running = False
                     board = np.zeros((60, 80))
 
-                # Update the board as soon as KEYDOWN events occur
-                iterate(screen, board, 10)
-                pygame.display.update()
-
             # Get the user's mouse position to draw and clear cells before starting the game
             pos = pygame.mouse.get_pos()
             click = pygame.mouse.get_pressed()
